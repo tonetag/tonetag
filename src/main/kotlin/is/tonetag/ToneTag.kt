@@ -74,4 +74,11 @@ class ToneTagResource {
         return tagTemplate.data("indicator", indicator)
     }
 
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("json/{name}")
+    fun tonetagJson(name: String): Indicator? {
+        return service.findIndicator(tag = name)
+    }
+
 }
