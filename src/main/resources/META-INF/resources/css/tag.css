@@ -1,0 +1,34 @@
+.content .card {
+    font-size: 2.4em;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 25ch;
+    max-width: 100%;
+}
+
+.content .card .card-header {
+    text-align: center;
+    line-height: 0.3ch;
+    border: 4px rgba(0, 0, 0, 0.3) solid;
+}
+
+.content .card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-size: 1.35em;
+    text-align: center;
+    padding: 30px;
+    border: 4px rgba(0, 0, 0, 0.3) solid;
+    border-top: 0px;
+}
+
+.content .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1ch;
+}

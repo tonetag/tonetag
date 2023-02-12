@@ -1,0 +1,53 @@
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    display: flex;
+    height: 8%;
+    background: #ffaaff;
+    border: 4px rgba(0, 0, 0, 0.3) solid;
+}
+
+.header .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1ch;
+    margin: 1ch;
+    width: 100%;
+}
+
+.header .header-content .header-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2ch 0.7ch;
+    margin: 0.2ch 0.7ch;
+    line-height: 0.3ch;
+    background: white;
+    border: 4px rgba(0, 0, 0, 0.3) solid;
+
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    background: #eeeeee;
+    justify-content: center;
+    border: 4px rgba(0, 0, 0, 0.3) solid;
+}

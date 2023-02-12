@@ -1,4 +1,3 @@
-{@is.tonetag.model.Indicator indicator}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +8,33 @@
     <meta property="og:description" content="{indicator.description}" />
     <meta property="og:type" content="website" />
     <meta content="{indicator.colour}" name="theme-color" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/css/tag.css">
 </head>
 <body>
-    <h1>{indicator.emoji.0} /{indicator.tag} {indicator.emoji.1}</h1>
-    <h2>{indicator.definition}</h2>
-    <h3>{indicator.description}</h3>
+    <script defer src="/js/script.js"></script>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-card">
+                <p>What tonetag.is/</p>
+                <input type="text" id="searchbox" placeholder="tag" size="3">
+                <p>?</p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="card-header" style="background: {indicator.colour}">
+                <p>{indicator.emoji.0} <b>/{indicator.tag}</b> {indicator.emoji.1}</p>
+                <p><b>{indicator.definition}</b></p>
+            </div>
+            <div class="card-body">
+                <p>{indicator.description}</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -2,22 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>What </title>
+    <title>What tonetag.is? - Index</title>
     <title>What tonetag.is? - Index</title>
     <meta property="og:site_name" content="What tonetag.is?" />
     <meta property="og:title" content="Index of tone tags/indicators 🗂️" />
     <meta property="og:type" content="website" />
     <meta content="#ffaaff" name="theme-color" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
 </head>
+
 <body>
-    <h1>Indicators</h1>
-    <ul>
-        {#for indicator in indicators}
-        <li>
-            <a href="/{indicator.tag}">{indicator.tag} {indicator.emoji}</a>
-        </li>
-        {/for}
-    </ul>
+    <script defer src="/js/script.js"></script>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-card">
+                <p>What tonetag.is/</p>
+                <input type="text" id="searchbox" placeholder="tag" size="3">
+                <p>?</p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card-grid">
+            {#for indicator in indicators}
+            <div class="card">
+                <div class="card-header" style="background: {indicator.colour}">
+                    <a href="/{indicator.tag}" class="card-link">
+                        <p>{indicator.emoji.0} <b>/{indicator.tag}</b> {indicator.emoji.1}</p>
+                        <p><b>{indicator.definition}</b></p>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p>{indicator.description}</p>
+                </div>
+            </div>
+            {/for}
+        </div>
+    </div>
 </body>
 </html>
