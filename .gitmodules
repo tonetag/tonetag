@@ -1,0 +1,3 @@
+[submodule "src/main/resources/data"]
+	path = src/main/resources/data
+	url = https://github.com/tonetag/resources.git
