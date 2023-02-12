@@ -2,19 +2,19 @@ package `is`.tonetag // "is" is a reserved keyword in Kotlin, so we need to esca
 
 import io.quarkus.test.junit.QuarkusTest
 import io.restassured.RestAssured.given
-import org.hamcrest.CoreMatchers.`is`
+import org.hamcrest.CoreMatchers.containsString
 import org.junit.jupiter.api.Test
 
 @QuarkusTest
-class GreetingResourceTest {
+class ToneTagResourceTest {
 
     @Test
-    fun testHelloEndpoint() {
+    fun testJokingEnGBEndpoint() {
         given()
-          .`when`().get("/hello")
+          .`when`().get("/j/en_gb")
           .then()
              .statusCode(200)
-             .body(`is`("Hello from RESTSasy Reactive"))
+             .body(containsString("This tone indicator shows that the text or post is a joke and not meant to be taken seriously."))
     }
 
 }
