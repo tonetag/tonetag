@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tone tag index</title>
+</head>
+<body>
+    <h1>Indicators</h1>
+    <ul>
+        {#for indicator in indicators}
+        <li>
+            <a href="/{indicator.tag}">{indicator.tag} {indicator.emoji}</a>
+        </li>
+        {/for}
+    </ul>
+</body>
+</html>

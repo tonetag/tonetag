@@ -24,6 +24,7 @@ dependencies {
     testImplementation("io.rest-assured:rest-assured")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
     implementation("io.quarkus:quarkus-resteasy-reactive-qute")
+    implementation("io.quarkus:quarkus-reactive-routes")
 }
 
 group = "is.tonetag"

@@ -7,7 +7,7 @@ data class Language(
     val version: String,
     val id: String,
     val name: String,
-    val indicators: List<Indicator>
+    val indicators: Array<Indicator>
 ) {
     companion object {
 
@@ -25,7 +25,7 @@ data class Language(
         }
     }
 
-    val indicatorTable: HashMap<String, Indicator> = HashMap()
+    private val indicatorTable: HashMap<String, Indicator> = HashMap()
 
     init {
         for (indicator in indicators) {
