@@ -40,7 +40,11 @@
                     <p><b>{indicator.definition}</b></p>
                 </div></a>
                 <div class="card-body">
-                    <p>{indicator.description}</p>
+                    <p>{indicator.description}
+                    {#if indicator.aliases}
+                    <b>Aliases:</b> {#for alias in indicator.aliases} {alias}{#if !alias.equals(indicator.aliases.last) }, {/if} {/for}
+                    {/if}
+                    </p>
                 </div>
             </div>
             {/for}
