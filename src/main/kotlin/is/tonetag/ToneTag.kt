@@ -13,9 +13,13 @@ import javax.enterprise.event.Observes
 import javax.enterprise.inject.Default
 import javax.inject.Inject
 import javax.ws.rs.GET
+import javax.ws.rs.NotFoundException
 import javax.ws.rs.Path
 import javax.ws.rs.Produces
 import javax.ws.rs.core.MediaType
+import javax.ws.rs.core.Response
+import javax.ws.rs.ext.ExceptionMapper
+import javax.ws.rs.ext.Provider
 
 @ApplicationScoped
 class ToneTagService {
@@ -63,6 +67,7 @@ class ToneTagResource {
     @Path("/{name}")
     fun tonetag(name: String): TemplateInstance {
         val indicator = service.findIndicator(tag = name)
+            ?: throw NotFoundException()
         return tagTemplate.data("indicator", indicator)
     }
 
@@ -70,7 +75,8 @@ class ToneTagResource {
     @Produces(MediaType.TEXT_HTML)
     @Path("/{name}/{language}")
     fun tonetag(name: String, language: String): TemplateInstance {
-        val indicator = service.findIndicator(tag = name) // Not implemented languages yet, but using it to bypass caching
+        val indicator = service.findIndicator(tag = name)
+            ?: throw NotFoundException() // Not implemented languages yet, but using it to bypass caching
         return tagTemplate.data("indicator", indicator)
     }
 
@@ -88,4 +94,18 @@ class ToneTagResource {
         return service.getLanguage().indicators
     }
 
+}
+
+@Provider
+class ToneTagExceptionMapper : ExceptionMapper<NotFoundException> {
+    @Inject
+    @Location("404.html")
+    lateinit var notFoundTemplate: Template
+
+    @Produces(MediaType.TEXT_HTML)
+    override fun toResponse(exception: NotFoundException?): Response? {
+        return notFoundTemplate.data("exception", exception).render().let {
+            Response.status(Response.Status.NOT_FOUND).entity(it).build()
+        }
+    }
 }
