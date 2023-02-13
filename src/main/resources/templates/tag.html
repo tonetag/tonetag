@@ -20,13 +20,16 @@
         <div class="header-content">
             <div class="header-search">
                 <p>What tonetag.is/</p>
-                <input type="text" id="searchbox" placeholder="tag" size="3">
+                <form autocomplete="off"><input type="text" id="searchbox" placeholder="tag" size="3" onkeyup="showResults(this.value)">
+                <div id="result"></div>
+                </form>
                 <p>?</p>
             </div>
             <a href="/" class="header-index">
                 <p>Index</p>
             </a>
         </div>
+        <a href="https://github.com/tonetag"><img src="/github-mark.svg" class="github-mark"></a>
     </div>
     <div class="content">
         <div class="card">

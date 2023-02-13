@@ -76,9 +76,16 @@ class ToneTagResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("json/{name}")
+    @Path("/api/tag/{name}")
     fun tonetagJson(name: String): Indicator? {
         return service.findIndicator(tag = name)
+    }
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/api/list")
+    fun list(): Array<Indicator> {
+        return service.getLanguage().indicators
     }
 
 }
