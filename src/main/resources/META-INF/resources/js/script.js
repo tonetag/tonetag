@@ -10,6 +10,28 @@ fetch('/api/list')
     }
 );
 
+function pickTextColour(bgColour) {
+    let r, g, b, hsp;
+
+    if (bgColour.match(/^rgb/)) {
+        bgColour = bgColour.match(/rgba?\(([^)]+)\)/)[1];
+        bgColour = bgColour.split(/ *, */).map(Number);
+        r = bgColour[0];
+        g = bgColour[1];
+        b = bgColour[2];
+    }
+    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+    return brightness < 125 ? '#fff' : '#000';
+}
+
+const cards = document.getElementsByClassName('card-header');
+for (let i=0; i<cards.length; i++) {
+    let card = cards[i];
+    let bgColour = window.getComputedStyle(card).backgroundColor;
+    console.log(bgColour);
+    card.style.color = pickTextColour(bgColour);
+}
+
 textElement.addEventListener('keydown', function(event) {
     const text = textElement.value;
 

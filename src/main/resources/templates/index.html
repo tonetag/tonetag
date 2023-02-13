@@ -35,12 +35,10 @@
         <div class="card-grid">
             {#for indicator in indicators}
             <div class="card">
-                <div class="card-header" style="background: {indicator.colour}">
-                    <a href="/{indicator.tag}" class="card-link">
-                        <p>{indicator.emoji.0} <b>/{indicator.tag}</b> {indicator.emoji.1}</p>
-                        <p><b>{indicator.definition}</b></p>
-                    </a>
-                </div>
+                <a href="/{indicator.tag}" style="text-decoration: none"><div class="card-header" style="background: {indicator.colour}">
+                    <p>{indicator.emoji.0} <b>/{indicator.tag}</b> {indicator.emoji.1}</p>
+                    <p><b>{indicator.definition}</b></p>
+                </div></a>
                 <div class="card-body">
                     <p>{indicator.description}</p>
                 </div>
