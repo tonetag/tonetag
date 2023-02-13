@@ -10,10 +10,12 @@ fetch('/api/list')
     }
 );
 
-textElement.addEventListener('keyup', function(event) {
+textElement.addEventListener('keydown', function(event) {
     const text = textElement.value;
 
     if (event.key === 'Enter') {
+        event.preventDefault();
+
         if (text == '') {
             return;
         }
