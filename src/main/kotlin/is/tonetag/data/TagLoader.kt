@@ -1,15 +1,12 @@
 package `is`.tonetag.data
 
 import `is`.tonetag.model.Language
-import java.nio.file.Paths
+import kotlin.collections.ArrayList
 
 object TagLoader {
 
-    fun getAvailableLanguages(): List<String> {
-        val uri = this::class.java.getResource("/data/tags")?.toURI()
-        val path = Paths.get(uri)
-
-        return path.toFile().listFiles().map { it.name }
+    private fun getAvailableLanguages(): List<String> {
+        return listOf("en_gb")
     }
 
     fun loadLanguages() {

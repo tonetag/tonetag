@@ -13,11 +13,9 @@ data class Language(
 
         val languages = HashMap<String, Language>()
         fun loadLanguage(language: String): Language {
-            val uri = this::class.java.getResource("/data/tags/$language")?.toURI()
-            val path = Paths.get(uri)
+            val inputStream = this::class.java.getResourceAsStream("/META-INF/data/tags/$language.json")
 
-            val file = path.toFile()
-            val json = file.readText()
+            val json = inputStream.bufferedReader().use { it.readText() }
 
             val mapper = jacksonObjectMapper()
 

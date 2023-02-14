@@ -1,0 +1,991 @@
+{
+  "version": "1",
+  "id": "en_gb",
+  "name": "English (UK)",
+  "indicators": [
+    {
+      "tag": "s",
+      "aliases": ["sarc"],
+      "long": "sarcasm",
+      "definition": "Sarcasm",
+      "description": "This tone indicator shows that the text or post is sarcastic and should not be taken as a genuine statement.",
+      "emoji": [
+        "🙃",
+        "🫠"
+      ],
+      "colour": "#ccea38"
+    },
+    {
+      "tag": "srs",
+      "aliases": [],
+      "long": "serious",
+      "definition": "Serious",
+      "description": "This tone indicator shows that the text or post is serious and is meant to be taken as such.",
+      "emoji": [
+        "😐",
+        "😕"
+      ],
+      "colour": "#aa0000"
+    },
+    {
+      "tag": "nsrs",
+      "aliases": [],
+      "long": "not-serious",
+      "definition": "Not serious",
+      "description": "This tone indicator shows that the text or post is not serious and doesn't need to be taken seriously.",
+      "emoji": [
+        "😜",
+        "🫢"
+      ],
+      "colour": "#89c6ff"
+    },
+    {
+      "tag": "j",
+      "aliases": ["jk"],
+      "long": "joking",
+      "definition": "Joking",
+      "description": "This tone indicator shows that the text or post is a joke and not meant to be taken seriously.",
+      "emoji": [
+        "😜",
+        "😆"
+      ],
+      "colour": "#ffff7f"
+    },
+    {
+      "tag": "hj",
+      "aliases": [],
+      "long": "halfjoking",
+      "definition": "Half joking",
+      "description": "This tone indicator shows that the text or post is half joking and should not fully be taken seriously but is not just a joke.",
+      "emoji": [
+        "😉",
+        "😏"
+      ],
+      "colour": "#ffb45e"
+    },
+    {
+      "tag": "fl",
+      "aliases": [],
+      "long": "flirting",
+      "definition": "Flirting",
+      "description": "This tone indicator shows that the text or post is flirting and could be taken as romantic.",
+      "emoji": [
+        "😘",
+        "😍"
+      ],
+      "colour": "#ff9ee8"
+    },
+    {
+      "tag": "nfl",
+      "aliases": [],
+      "long": "not-flirting",
+      "definition": "Not flirting",
+      "description": "This tone indicator shows that the text or post is not trying to come across as flirting.",
+      "emoji": [
+        "😜",
+        "😇"
+      ],
+      "colour": "#ffbfa2"
+    },
+    {
+      "tag": "r",
+      "aliases": [],
+      "long": "romantic",
+      "definition": "Romantic",
+      "description": "This tone indicator shows that the text or post is romantic and has romantic intent.",
+      "emoji": [
+        "😍",
+        "😘"
+      ],
+      "colour": "#ff007f"
+    },
+    {
+      "tag": "a",
+      "aliases": [],
+      "long": "alterous",
+      "definition": "Alterous",
+      "description": "This tone indicator shows that affection shown in the text or post is alterous. Not necessarily just romantic or platonic.",
+      "emoji": [
+        "😳",
+        "😘"
+      ],
+      "colour": "#ff7f7f"
+    },
+    {
+      "tag": "p",
+      "aliases": ["plat"],
+      "long": "platonic",
+      "definition": "Platonic",
+      "description": "This tone indicator shows that the text or post is platonic and is not meant to be taken as romantic.",
+      "emoji": [
+        "🥰",
+        "🫂"
+      ],
+      "colour": "#ffff00"
+    },
+    {
+      "tag": "qp",
+      "aliases": [],
+      "long": "queerplatonic",
+      "definition": "Queerplatonic",
+      "description": "This tone indicator shows that the text or post is queerplatonic and does not fit under romantic or platonic.",
+      "emoji": [
+        "😘",
+        "🫂"
+      ],
+      "colour": "#ff7f7f"
+    },
+    {
+      "tag": "fam",
+      "aliases": [],
+      "long": "familial",
+      "definition": "Familial",
+      "description": "This tone indicator shows that the text or post is familial and the users are family.",
+      "emoji": [
+        "👨‍👩‍👧‍👦",
+        "😛"
+      ],
+      "colour": "#cfb418"
+    },
+    {
+      "tag": "sx",
+      "aliases": ["x"],
+      "long": "sexual",
+      "definition": "Sexual",
+      "description": "This tone indicator shows that the text or post is with sexual intent.",
+      "emoji": [
+        "😏",
+        "🍑"
+      ],
+      "colour": "#ff3d40"
+    },
+    {
+      "tag": "nsx",
+      "aliases": ["nx"],
+      "long": "not-sexual",
+      "definition": "Not sexual",
+      "description": "This tone indicator shows that the text or post is not sexual and is not meant to be taken as sexual.",
+      "emoji": [
+        "😜",
+        "🤪"
+      ],
+      "colour": "#ddff93"
+    },
+    {
+      "tag": "lhj",
+      "aliases": [],
+      "long": "lighthearted-joke",
+      "definition": "Lighthearted joke",
+      "description": "This tone indicator shows that the text or post is a lighthearted joke and is not meant to be rude or offensive.",
+      "emoji": [
+        "😋",
+        "😛"
+      ],
+      "colour": "#ff7f7f"
+    },
+    {
+      "tag": "mj",
+      "aliases": [],
+      "long": "mostly-joking",
+      "definition": "Mostly joking",
+      "description": "This tone indicator shows that the text or post is mostly joking and should not be taken seriously but might have some truth to it.",
+      "emoji": [
+        "🤣",
+        "😆"
+      ],
+      "colour": "#e05616"
+    },
+    {
+      "tag": "cj",
+      "aliases": [],
+      "long": "coping-joke",
+      "definition": "Coping joke",
+      "description": "This tone indicator shows that the text or post is joke for the purpose of coping with a situation.",
+      "emoji": [
+        "😅",
+        "😶"
+      ],
+      "colour": "#aa2800"
+    },
+    {
+      "tag": "ji",
+      "aliases": [],
+      "long": "joke-insult",
+      "definition": "Joke insult",
+      "description": "This tone indicator shows that the text or post is a joke insult and is not meant to cause offence.",
+      "emoji": [
+        "😜",
+        "🤭"
+      ],
+      "colour": "#aa004a"
+    },
+    {
+      "tag": "pos",
+      "aliases": [],
+      "long": "positive",
+      "definition": "Positive",
+      "description": "This tone indicator shows that the text or post is positive and has positive intent.",
+      "emoji": [
+        "😊",
+        "🤗"
+      ],
+      "colour": "#c362ff"
+    },
+    {
+      "tag": "neg",
+      "aliases": [],
+      "long": "negative",
+      "definition": "Negative",
+      "description": "This tone indicator shows that the text or post is negative and isn't meant to be taken positively.",
+      "emoji": [
+        "😡",
+        "😠"
+      ],
+      "colour": "#9c2a1b"
+    },
+    {
+      "tag": "neu",
+      "aliases": [],
+      "long": "neutral",
+      "definition": "Neutral",
+      "description": "This tone indicator shows that the text or post is neutral and has no positive or negative intent.",
+      "emoji": [
+        "😐",
+        "😑"
+      ],
+      "colour": "#ff7f00"
+    },
+    {
+      "tag": "gen",
+      "aliases": ["g"],
+      "long": "genuine",
+      "definition": "Genuine",
+      "description": "This tone indicator shows that the text or post is genuine and should be taken as such.",
+      "emoji": [
+        "😊",
+        "😇"
+      ],
+      "colour": "#df95df"
+    },
+    {
+      "tag": "nbr",
+      "aliases": [],
+      "long": "not-being-rude",
+      "definition": "Not being rude",
+      "description": "This tone indicator shows that the user is not trying to be rude.",
+      "emoji": [
+        "😊",
+        "😇"
+      ],
+      "colour": "#df76b5"
+    },
+    {
+      "tag": "pf",
+      "aliases": [],
+      "long": "playful",
+      "definition": "Playful",
+      "description": "This tone indicator shows that the text or post is with playful intent.",
+      "emoji": [
+        "😛",
+        "😜"
+      ],
+      "colour": "#18ff18"
+    },
+    {
+      "tag": "t",
+      "aliases": [],
+      "long": "teasing",
+      "definition": "Teasing",
+      "description": "This tone indicator shows that the text or post is just teasing and isn't meant negatively.",
+      "emoji": [
+        "😉",
+        "😏"
+      ],
+        "colour": "#ffcf81"
+    },
+    {
+      "tag": "th",
+      "aliases": [],
+      "long": "threat",
+      "definition": "Threat",
+      "description": "This tone indicator shows that the user is threathening with action. (Sometimes used as a joke, please /j if needed)",
+      "emoji": [
+        "👿",
+        "😡"
+      ],
+      "colour": "#7f0072"
+    },
+    {
+      "tag": "c",
+      "aliases": [],
+      "long": "copypasta",
+      "definition": "Copypasta",
+      "description": "This tone indicator shows that the text or post is a copypasta and is not originally written by the user.",
+      "emoji": [
+        "📄",
+        "🍝"
+      ],
+      "colour": "#aaffff"
+    },
+    {
+      "tag": "l",
+      "aliases": ["ly", "lyr"],
+      "long": "lyrics",
+      "definition": "Lyrics",
+      "description": "This tone indicator shows that the text or post is lyrics and part of a song.",
+      "emoji": [
+        "🎵",
+        "🎶"
+      ],
+      "colour": "#ff00fb"
+    },
+    {
+      "tag": "!",
+      "aliases": [],
+      "long": "excited",
+      "definition": "Excited",
+      "description": "This tone indicator shows that the user is excited about the text or post.",
+      "emoji": [
+        "😄",
+        "😃"
+      ],
+      "colour": "#ffff77"
+    },
+    {
+      "tag": "ao",
+      "aliases": [],
+      "long": "an-order",
+      "definition": "An order",
+      "description": "This tone indicator shows that the text or post is an order or instruction and should be followed.",
+      "emoji": [
+        "📖",
+        "🛠"
+      ],
+      "colour": "#00557f"
+    },
+    {
+      "tag": "nao",
+      "aliases": [],
+      "long": "not-an-order",
+      "definition": "Not an order",
+      "description": "This tone indicator shows that the text or post is not an order or instruction and should not be followed.",
+      "emoji": [
+        "🤗",
+        "🛑"
+      ],
+      "colour": "#3c5a7f"
+    },
+    {
+      "tag": "av",
+      "aliases": [],
+      "long": "a-vent",
+      "definition": "A vent",
+      "description": "This tone indicator shows that the user is venting and might not necessarily be looking for advice or help.",
+      "emoji": [
+        "🗣",
+        "🗯"
+      ],
+      "colour": "#aa007f"
+    },
+    {
+      "tag": "nav",
+      "aliases": [],
+      "long": "not-a-vent",
+      "definition": "Not a vent",
+      "description": "This tone indicator shows that the user is not venting and is looking for advice or help.",
+      "emoji": [
+        "😓",
+        "😢"
+      ],
+      "colour": "#196aff"
+    },
+    {
+      "tag": "ay",
+      "aliases": [],
+      "long": "at-you",
+      "definition": "At you",
+      "description": "This tone indicator shows that the text or post is directed at you, and not anyone else who might be reading it.",
+      "emoji": [
+        "🫵",
+        "🤫"
+      ],
+      "colour": "#abab00"
+    },
+    {
+      "tag": "nay",
+      "aliases": [],
+      "long": "not-at-you",
+      "definition": "Not at you",
+      "description": "This tone indicator shows that the text or post is not directed at you.",
+      "emoji": [
+        "👀",
+        "👁"
+      ],
+      "colour": "#c0ffe8"
+    },
+    {
+      "tag": "br",
+      "aliases": [],
+      "long": "bragging",
+      "definition": "Bragging",
+      "description": "This tone indicator shows that the user is bragging about something or themselves.",
+      "emoji": [
+        "🤩",
+        "🤑"
+      ],
+      "colour": "#aaff00"
+    },
+    {
+      "tag": "fx",
+      "aliases": [],
+      "long": "flex",
+      "definition": "Flex",
+      "description": "This tone indicator shows that the user is flexing about something or themselves.",
+      "emoji": [
+        "💪",
+        "⌚"
+      ],
+      "colour": "#ffa033"
+    },
+    {
+      "tag": "nabr",
+      "aliases": [],
+      "long": "not-a-brag",
+      "definition": "Not a brag",
+      "description": "This tone indicator shows that the user is not trying to come across as bragging.",
+      "emoji": [
+        "🤐",
+        "🤫"
+      ],
+      "colour": "#66d6ff"
+    },
+    {
+      "tag": "nafx",
+      "aliases": [],
+      "long": "not-a-flex",
+      "definition": "Not a flex",
+      "description": "This tone indicator shows that the user is not trying to come across as flexing.",
+      "emoji": [
+        "🤫",
+        "🤐"
+      ],
+      "colour": "#e1cbff"
+    },
+    {
+      "tag": "calm",
+      "aliases": [],
+      "long": "calm",
+      "definition": "Calm",
+      "description": "This tone indicator shows that the text or post is calm and should not be perceived as aggressive.",
+      "emoji": [
+        "😌",
+        "😎"
+      ],
+      "colour": "#55ffff"
+    },
+    {
+      "tag": "cb",
+      "aliases": [],
+      "long": "clickbait",
+      "definition": "Clickbait",
+      "description": "This tone indicator shows that the text or post is clickbait and the title might not represent the content accurately.",
+      "emoji": [
+        "📰",
+        "🖱️"
+      ],
+      "colour": "#68777e"
+    },
+    {
+      "tag": "cel",
+      "aliases": [],
+      "long": "celebratory",
+      "definition": "Celebratory",
+      "description": "This tone indicator shows that the user is celebrating something and is happy about it.",
+      "emoji": [
+        "🎉",
+        "🎊"
+      ],
+      "colour": "#ffec17"
+    },
+    {
+      "tag": "co",
+      "aliases": ["cf"],
+      "long": "comforting",
+      "definition": "Comforting",
+      "description": "This tone indicator shows that the user is trying to be comforting and is meant to make you feel better.",
+      "emoji": [
+        "🤗",
+        "🫂"
+      ],
+      "colour": "#f2ff61"
+    },
+    {
+      "tag": "gentle",
+      "aliases": [],
+      "long": "gentle",
+      "definition": "Gentle",
+      "description": "This tone indicator shows that the text or post is gentle and is trying to be kind.",
+      "emoji": [
+        "🥰",
+        "🤗"
+      ],
+      "colour": "#8b2eaa"
+    },
+    {
+      "tag": "curi",
+      "aliases": [],
+      "long": "curious",
+      "definition": "Curious",
+      "description": "This tone indicator shows that the user is curious about something and genuinely wants to know more.",
+      "emoji": [
+        "🤔",
+        "🤨"
+      ],
+      "colour": "#dba2ff"
+    },
+    {
+      "tag": "lh",
+      "aliases": [],
+      "long": "lighthearted",
+      "definition": "Lighthearted",
+      "description": "This tone indicator shows that the text or post is lighthearted and isn't meant to cause offence.",
+      "emoji": [
+        "😊",
+        "😇"
+      ],
+      "colour": "#ff9558" 
+    },
+    {
+      "tag": "w",
+      "aliases": [],
+      "long": "warmth",
+      "definition": "Warmth",
+      "description": "This tone indicator shows that the text or post is trying to provide warmth and is meant to make you feel good.",
+      "emoji": [
+        "🥰",
+        "😊"
+      ],
+      "colour": "#ff5c33"
+    },
+    {
+      "tag": "pa",
+      "aliases": [],
+      "long": "passive-aggressive",
+      "definition": "Passive-aggressive",
+      "description": "This tone indicator shows that the text is passive-aggressive and could be taken negatively.",
+      "emoji": [
+        "😠",
+        "🙂"
+      ],
+      "colour": "#ff7482"
+    },
+    {
+      "tag": "npa",
+      "aliases": [],
+      "long": "not-passive-aggressive",
+      "definition": "Not passive-aggressive",
+      "description": "This tone indicator shows that the text is not passive-aggressive and shouldn't be read negatively.",
+      "emoji": [
+        "🙂",
+        "😊"
+      ],
+      "colour": "#ffaffb"
+    },
+    {
+      "tag": "nm",
+      "aliases": [],
+      "long": "not-mad",
+      "definition": "Not mad",
+      "description": "This tone indicator shows that the text or post is not mad and the user is not angry.",
+      "emoji": [
+        "🤗",
+        "😇"
+      ],
+      "colour": "#5eff76"
+    },
+    {
+      "tag": "nmay",
+      "aliases": [],
+      "long": "not-mad-at-you",
+      "definition": "Not mad at you",
+      "description": "This tone indicator shows that the text or post is not mad at you, but may be mad at something else.",
+      "emoji": [
+        "🤗",
+        "😠"
+      ],
+      "colour": "#ffda21"
+    },
+    {
+      "tag": "ny",
+      "aliases": [],
+      "long": "not-yelling",
+      "definition": "Not yelling",
+      "description": "This tone indicator shows that the text or post is not intended to come across as yelling.",
+      "emoji": [
+        "😊",
+        "🤫"
+      ],
+      "colour": "#23ffff"
+    },
+    {
+      "tag": "u",
+      "aliases": [],
+      "long": "upset",
+      "definition": "Upset",
+      "description": "This tone indicator shows that the text or post is upset and the user is angry.",
+      "emoji": [
+        "😠",
+        "😡"
+      ],
+      "colour": "#e02d00"
+    },
+    {
+      "tag": "lu",
+      "aliases": [],
+      "long": "little-upset",
+      "definition": "Little upset",
+      "description": "This tone indicator shows that the text or post is a little upset and the user is a little bit angry.",
+      "emoji": [
+        "😠",
+        "😒"
+      ],
+      "colour": "#ffaa00"
+    },
+    {
+      "tag": "vu",
+      "aliases": [],
+      "long": "very-upset",
+      "definition": "Very upset",
+      "description": "This tone indicator shows that the text or post is very upset and the user is very angry.",
+      "emoji": [
+        "🤬",
+        "😡"
+      ],
+      "colour": "#a00000"
+    },
+    {
+      "tag": "unin",
+      "aliases": [],
+      "long": "unintentional",
+      "definition": "Unintentional",
+      "description": "This tone indicator shows that the user did not intend to do what the message is about.",
+      "emoji": [
+        "🤔",
+        "🤫"
+      ],
+      "colour": "#c4ff57"
+    },
+    {
+      "tag": "nbh",
+      "aliases": [],
+      "long": "nobody-here",
+      "definition": "Nobody here",
+      "description": "This tone indicator shows that the remark is not directed at anyone who would see the message.",
+      "emoji": [
+        "🤐",
+        "🥶"
+      ],
+      "colour": "#55557f"
+    },
+    {
+      "tag": "sbh",
+      "aliases": [],
+      "long": "somebody-here",
+      "definition": "Somebody here",
+      "description": "This tone indicator shows that the remark is directed at someone who would see the message.",
+      "emoji": [
+        "👀",
+        "🤫"
+      ],
+      "colour": "#a13651"
+    },
+    {
+      "tag": "naq",
+      "aliases": [],
+      "long": "not-a-question",
+      "definition": "Not a question",
+      "description": "This tone indicator shows that the text or post is not a question and is not meant to be answered.",
+      "emoji": [
+        "🤐",
+        "🤫"
+      ],
+      "colour": "#97ff21"
+    },
+    {
+      "tag": "gq",
+      "aliases": ["genq"],
+      "long": "genuine-question",
+      "definition": "Genuine question",
+      "description": "This tone indicator shows that the text or post is a genuine question and not rhetorical.",
+      "emoji": [
+        "🤔",
+        "❓"
+      ],
+      "colour": "#77757f"
+    },
+    {
+      "tag": "jw",
+      "aliases": [],
+      "long": "just-wondering",
+      "definition": "Just wondering",
+      "description": "This tone indicator shows that the user is just wondering and not receiving a reply would not be rude.",
+      "emoji": [
+        "🤔",
+        "🙂"
+      ],
+      "colour": "#25aa6e"
+    },
+    {
+      "tag": "gs",
+      "aliases": [],
+      "long": "genuine-suggestion",
+      "definition": "Genuine suggestion",
+      "description": "This tone indicator shows that the text or post is a genuine suggestion and not dismissive.",
+      "emoji": [
+        "💡",
+        "🤔"
+      ],
+      "colour": "#ffde7b"
+    },
+    {
+      "tag": "q",
+      "aliases": [],
+      "long": "quote",
+      "definition": "Quote",
+      "description": "This tone indicator shows that the text or post is a direct quote of another original text.",
+      "emoji": [
+        "🖨️",
+        "📝"
+      ],
+      "colour": "#98c6ff"
+    },
+    {
+      "tag": "para",
+      "aliases": [],
+      "long": "paraphrasing",
+      "definition": "Paraphrasing",
+      "description": "This tone indicator shows that the text or post contains a paraphrase of another original text, not a direct quote.",
+      "emoji": [
+        "✍️",
+        "📄"
+      ],
+      "colour": "#ffaa7f"
+    },
+    {
+      "tag": "st",
+      "aliases": ["state"],
+      "long": "statement",
+      "definition": "Statement",
+      "description": "This tone indicator shows that the text or post is a statement and not a question.",
+      "emoji": [
+        "📝",
+        "📄"
+      ],
+      "colour": "#a7a7a7"
+    },
+    {
+      "tag": "f",
+      "aliases": [],
+      "long": "fake",
+      "definition": "Fake",
+      "description": "This tone indicator shows that the information in this post is fake and not factual.",
+      "emoji": [
+        "🤥",
+        "🤫"
+      ],
+      "colour": "#aa557f"
+    },
+    {
+      "tag": "nf",
+      "aliases": [],
+      "long": "not-fake",
+      "definition": "Not fake",
+      "description": "This tone indicator shows that the information in this post is not intended to be fake.",
+      "emoji": [
+        "🙂",
+        "😌"
+      ],
+      "colour": "#39aadf"
+    },
+    {
+      "tag": "li",
+      "aliases": [],
+      "long": "literally",
+      "definition": "Literally",
+      "description": "This tone indicator shows that the text or post is literally and should be taken as such.",
+      "emoji": [
+        "📘",
+        "💡"
+      ],
+      "colour": "#6fcdff"
+    },
+    {
+      "tag": "m",
+      "aliases": [],
+      "long": "metaphorical",
+      "definition": "Metaphorical",
+      "description": "This tone indicator shows that the text or post is metaphorical and should not be taken literally.",
+      "emoji": [
+        "🤔",
+        "🤫"
+      ],
+      "colour": "#05ab60"
+    },
+    {
+      "tag": "hyp",
+      "aliases": [],
+      "long": "hyperbole",
+      "definition": "Hyperbole",
+      "description": "This tone indicator shows that the text or post is hyperbole and is an exaggeration.",
+      "emoji": [
+        "🤔",
+        "😶‍🌫️"
+      ],
+      "colour": "#22c4ff"
+    },
+    {
+      "tag": "rh",
+      "aliases": [],
+      "long": "rhetorical",
+      "definition": "Rhetorical",
+      "description": "This tone indicator shows that the text or post is rhetorical and not an actual question.",
+      "emoji": [
+        "🤔",
+        "🧐"
+      ],
+      "colour": "#22cfff"
+    },
+    {
+      "tag": "info",
+      "aliases": [],
+      "long": "information",
+      "definition": "Information",
+      "description": "This tone indicator shows that the user is trying to be informative.",
+      "emoji": [
+        "📚",
+        "📖"
+      ],
+      "colour": "#aaffff"
+    },
+    {
+      "tag": "ij",
+      "aliases": [],
+      "long": "inside-joke",
+      "definition": "Inside joke",
+      "description": "This tone indicator shows that the text or post is an inside joke and is not expected to be understood by anyone else.",
+      "emoji": [
+        "😆",
+        "🤫"
+      ],
+        "colour": "#8045aa"
+    },
+    {
+      "tag": "ts",
+      "aliases": [],
+      "long": "to-self",
+      "definition": "To self",
+      "description": "This tone indicator shows that the text or post is intended for the user's own use and interpretation and not for others.",
+      "emoji": [
+        "🤔",
+        "😶‍🌫"
+      ],
+      "colour": "#bdacff"
+    },
+    {
+      "tag": "ref",
+      "aliases": [],
+      "long": "reference",
+      "definition": "Reference",
+      "description": "This tone indicator shows that the text or post is a reference to something else and might not be understood by everyone.",
+      "emoji": [
+        "🤔",
+        "🤠"
+      ],
+      "colour": "#00557f"
+    },
+    {
+      "tag": "tan",
+      "aliases": [],
+      "long": "tangent",
+      "definition": "Tangent",
+      "description": "This tone indicator shows that the text or post is a tangent and taking the conversation off-topic.",
+      "emoji": [
+        "🤔",
+        "🤓"
+      ],
+      "colour": "#25c24a"
+    },
+    {
+      "tag": "ot",
+      "aliases": [],
+      "long": "off-topic",
+      "definition": "Off-topic",
+      "description": "This tone indicator shows that the text or post is off-topic and is not related to the current conversation.",
+      "emoji": [
+        "😶‍🌫",
+        "🗣️"
+      ],
+      "colour": "#ffaa7f"
+    },
+    {
+      "tag": "irre",
+      "aliases": [],
+      "long": "irrelevant",
+      "definition": "Irrelevant",
+      "description": "This tone indicator shows that the text or post is irrelevant and does not contribute to the topic.",
+      "emoji": [
+        "🤔",
+        "🤐"
+      ],
+      "colour": "#aaaa7f"
+    },
+    {
+      "tag": "unre",
+      "aliases": [],
+      "long": "unrelated",
+      "definition": "Unrelated",
+      "description": "This tone indicator shows that the text or post is unrelated to the current conversation.",
+      "emoji": [
+        "🤔",
+        "😶‍🌫️"
+      ],
+      "colour": "#8cb191"
+    },
+    {
+      "tag": "tic",
+      "aliases": [],
+      "long": "tic",
+      "definition": "Tic",
+      "description": "This tone indicator shows that the text or post is sent as a tic, and not intentionally.",
+      "emoji": [
+        "😵‍💫",
+        "🤐"
+      ],
+      "colour": "#bbff62"
+    },
+    {
+      "tag": "rp",
+      "aliases": [],
+      "long": "roleplay",
+      "definition": "Roleplay",
+      "description": "This tone indicator shows that the user writing the text or post is roleplaying.",
+      "emoji": [
+        "🥸",
+        "🎬"
+      ],
+      "colour": "#f6ffa4"
+    },
+    {
+      "tag": "silly",
+      "aliases": [],
+      "long": "silly",
+      "definition": "Silly",
+      "description": "this tone indicator shows that the user is silly :3c",
+      "emoji": [
+        "🤪",
+        "😺"
+      ],
+      "colour": "#b0ff67"
+    }
+  ]
+}
