@@ -28,7 +28,6 @@ const cards = document.getElementsByClassName('card-header');
 for (let i=0; i<cards.length; i++) {
     let card = cards[i];
     let bgColour = window.getComputedStyle(card).backgroundColor;
-    console.log(bgColour);
     card.style.color = pickTextColour(bgColour);
 }
 
@@ -43,7 +42,6 @@ textElement.addEventListener('keydown', function(event) {
         }
         for (let i=0; i<search_terms.length; i++) {
             if (text == search_terms[i].tag) {
-                console.log('Redirecting to ' + text);
                 window.location.href = '/' + text;
                 return;
             }
@@ -79,11 +77,13 @@ function showResults(val) {
         list.push(terms[i].tag);
     }
 
-    // Reorder list by relevance
+    // Reorder list
+    list = list.sort();
+    if (list.indexOf(val) > -1) {
+        list.splice(list.indexOf(val), 1);
+        list.unshift(val);
+    }
 
-    list.sort(function(a, b) {
-        return ('' + a).localeCompare(b);
-    });
 
     let result = '';
     for (let i=0; i<list.length; i++) {
