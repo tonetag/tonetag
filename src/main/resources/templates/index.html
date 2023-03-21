@@ -34,6 +34,7 @@
     <div class="content">
         <div class="card-grid">
             {#for indicator in indicators}
+            {#if indicator.hidden == false}
             <div class="card">
                 <a href="/{indicator.tag}" style="text-decoration: none"><div class="card-header" style="background: {indicator.colour}">
                     <p>{indicator.emoji.0} <b>/{indicator.tag}</b> {indicator.emoji.1}</p>
@@ -47,6 +48,7 @@
                     </p>
                 </div>
             </div>
+            {/if}
             {/for}
         </div>
     </div>

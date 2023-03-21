@@ -88,6 +88,18 @@
       "colour": "#ffbfa2"
     },
     {
+      "tag": "aff",
+      "aliases": [],
+      "long": "affectionate",
+      "definition": "Affectionate",
+      "description": "This tone indicator shows that the user is trying to show fond feelings or affection.",
+      "emoji": [
+        "😍",
+        "😘"
+      ],
+      "colour": "#7e53ff"
+    },
+    {
       "tag": "r",
       "aliases": [],
       "long": "romantic",
@@ -150,6 +162,7 @@
     {
       "tag": "sx",
       "aliases": ["x"],
+      "hiddenAliases": ["sex"],
       "long": "sexual",
       "definition": "Sexual",
       "description": "This tone indicator shows that the text or post is with sexual intent.",
@@ -305,7 +318,7 @@
     },
     {
       "tag": "th",
-      "aliases": [],
+      "aliases": ["thr"],
       "long": "threat",
       "definition": "Threat",
       "description": "This tone indicator shows that the user is threathening with action. (Sometimes used as a joke, please /j if needed)",
@@ -712,6 +725,18 @@
       "colour": "#97ff21"
     },
     {
+      "tag": "nfta",
+      "aliases": [],
+      "long": "not-forced-to-answer",
+      "definition": "Not forced to answer",
+      "description": "This tone indicator shows that the user is not forcing you to answer the question.",
+      "emoji": [
+        "🤔",
+        "🙂"
+      ],
+      "colour": "#a1d2ff"
+    },
+    {
       "tag": "gq",
       "aliases": ["genq"],
       "long": "genuine-question",
@@ -985,7 +1010,8 @@
         "🤪",
         "😺"
       ],
-      "colour": "#b0ff67"
+      "colour": "#b0ff67",
+      "hidden": true
     }
   ]
 }

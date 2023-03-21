@@ -31,6 +31,9 @@ data class Language(
             for (alias in indicator.aliases) {
                 indicatorTable[alias] = indicator
             }
+            for (alias in indicator.hiddenAliases) {
+                indicatorTable[alias] = indicator
+            }
         }
     }
 
