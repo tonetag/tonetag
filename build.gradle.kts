@@ -14,6 +14,7 @@ val quarkusPlatformArtifactId: String by project
 val quarkusPlatformVersion: String by project
 
 dependencies {
+    implementation("io.quarkus:quarkus-container-image-docker")
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-kotlin")
     implementation("io.quarkus:quarkus-resteasy-reactive-jackson")
@@ -28,7 +29,7 @@ dependencies {
 }
 
 group = "is.tonetag"
-version = "1.0.0"
+version = "1.0.3"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17

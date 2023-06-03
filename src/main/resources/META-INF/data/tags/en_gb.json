@@ -1012,6 +1012,19 @@
       ],
       "colour": "#b0ff67",
       "hidden": true
+    },
+    {
+      "tag": "gaslight",
+      "aliases": ["gas"],
+      "long": "gaslight",
+      "definition": "Gaslight",
+      "description": "/gaslight is not a real tone indicator. You're making it up. You're crazy.",
+      "emoji": [
+        "🕯",
+        "🔥"
+      ],
+      "colour": "#ffaa00",
+      "hidden": true
     }
   ]
 }
