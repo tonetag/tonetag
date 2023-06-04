@@ -40,3 +40,6 @@ quarkus build -Dquarkus.container-image.build=true
 This will create a container image with the name `ghcr.io/tonetag/tonetag` and tag of the version of the application.  
 
 A container of the current version is also published at the [GitHub Container Registry](ghcr.io/tonetag/tonetag).  
+
+## Deployment
+Deployment is done in the [tonetag/deployment](https://github.com/tonetag/deployment) repository. Please check there for more information!  
