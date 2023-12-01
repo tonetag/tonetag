@@ -14,7 +14,24 @@ class ToneTagResourceTest {
           .`when`().get("/j/en_gb")
           .then()
              .statusCode(200)
-             .body(containsString("This tone indicator shows that the text or post is a joke and not meant to be taken seriously."))
+             .body(containsString("This tone indicator shows that the text is a joke and not meant to be taken seriously."))
+    }
+
+    @Test
+    fun testAliasedJokingEnGBEndpoint() {
+        given()
+          .`when`().get("/jk/en_gb")
+          .then()
+             .statusCode(200)
+             .body(containsString("This tone indicator shows that the text is a joke and not meant to be taken seriously."))
+    }
+    @Test
+    fun testEasterEggEnGBEndpoint() {
+        given()
+            .`when`().get("/silly/en_gb")
+            .then()
+            .statusCode(200)
+            .body(containsString("SLASH SILLY!!???!!!"))
     }
 
 }
