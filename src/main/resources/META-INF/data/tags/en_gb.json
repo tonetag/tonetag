@@ -40,6 +40,18 @@
       "colour": "#89c6ff"
     },
     {
+      "tag": "hsrs",
+      "aliases": [],
+      "long": "half-serious",
+      "definition": "Half serious",
+      "description": "This tone indicator shows that the text is meant only somewhat seriously and/or part of it is exaggerated, joking or ironic.",
+      "emoji": [
+        "😐",
+        "🫢"
+      ],
+      "colour": "#4b6e8c"
+    },
+    {
       "tag": "j",
       "aliases": ["jk"],
       "long": "joking",
@@ -56,7 +68,7 @@
       "aliases": [],
       "long": "halfjoking",
       "definition": "Half joking",
-      "description": "This tone indicator shows that the text is half joking and is a joke with a hint of truth.",
+      "description": "This tone indicator shows that the text is half joking, meaning it is a joke with a hint of truth and/or a serious statement not meant to be taken fully literally.",
       "emoji": [
         "😉",
         "😏"
