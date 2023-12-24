@@ -1075,6 +1075,19 @@
       ],
       "colour": "#ff00ea",
       "hidden": true
+    },
+    {
+      "tag": "nft",
+      "aliases": [],
+      "long": "nft",
+      "definition": "NFT",
+      "description": "This message is an NFT. You are not allowed to screenshot it- no stop that, what are you doing?",
+      "emoji": [
+        "💎",
+        "🚀"
+      ],
+      "colour": "#21e9ff",
+      "hidden": true
     }
   ]
 }
